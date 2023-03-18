@@ -1,7 +1,8 @@
 * {
-  background-color: rgb(255, 238, 217); /* Light Orange */
+  background-color: rgb(255, 238, 217); /* Light Orange background */
 }
 
+/* Paragraph text on top */
 p {
   padding-left: 70px;
   padding-top: 50px;
@@ -12,10 +13,11 @@ p {
   font-weight: 400;
 }
 
+/* Two buttons below */
 button {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  background-color: rgb(255, 255, 109); /* Yellow */
+  background-color: rgb(255, 255, 109); /* Yellow Button*/
   border: 2px solid #e0a655; /* Orange Border */
   padding: 15px 32px;
   text-align: center;
@@ -30,6 +32,7 @@ button {
   transition-duration: 0.4s;
 }
 
+/* Button Hover Effect */
 button:hover {
   background-color: #e0a655; /* Green */
   color: white;
