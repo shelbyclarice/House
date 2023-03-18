@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Week 6: House Info</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script>
+      /* object */
+      var my_house = {
+        /* properties */
+        location: "Boca Raton, FL",
+        rooms: "3 rooms,",
+        baths: "2 baths,",
+        pool: "pool,",
+        hoa: "HOA",
+
+        /* method */
+        describeHouse: function () {
+          return (
+            "Your house is located in " +
+            this.location +
+            ". It has " +
+            this.rooms +
+            " " +
+            this.baths +
+            " a " +
+            this.pool +
+            " and in a " +
+            this.hoa +
+            " community"
+          );
+        },
+      };
+
+      /* object */
+      var your_house = {
+        /* properties */
+        location: "West Palm Beach, FL",
+        rooms: "5 rooms,",
+        baths: "3 baths,",
+        pool: "no pool,",
+        hoa: "HOA",
+
+        /* method */
+        describeHouse: function () {
+          return (
+            "Your house is located in " +
+            this.location +
+            ". It has " +
+            this.rooms +
+            " " +
+            this.baths +
+            " has " +
+            this.pool +
+            " and no " +
+            this.hoa
+          );
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <p id="housePlace">House info will go here</p>
+
+    <!--Button 1-->
+    <button
+      onclick="document.getElementById('housePlace').innerHTML = my_house.describeHouse()"
+    >
+      Get your House Info
+    </button>
+
+    <br />
+
+    <!--Button 2-->
+    <button
+      onclick="document.getElementById('housePlace').innerHTML = your_house.describeHouse()"
+    >
+      Get your House Info
+    </button>
+
+    <!--can have a form where people input their flower needs for gardening-->
+
+    <!--can have a button that calls a funtion that recomends a flower type-->
+  </body>
+</html>
+>
